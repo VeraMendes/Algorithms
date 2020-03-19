@@ -2,8 +2,27 @@
 
 import math
 
+# use dicts to check how many batches can you make of a recipe using the available ingredients
+
+# first dict has the amount of ingredients for the recipe
+# second dict has the amount of ingradients available to use
+
 def recipe_batches(recipe, ingredients):
-  pass 
+  counter = float('inf')
+  # print(counter)
+  for key in recipe.keys():
+    if key in ingredients.keys():
+      batches = ingredients[key] // recipe[key]
+      if batches < counter:
+        counter = batches
+        if counter == 0:
+          return counter
+
+    else:
+      return 0
+
+
+  return counter
 
 
 if __name__ == '__main__':

@@ -11,9 +11,6 @@ import argparse
 # keep checking current_min_price_so_far and max_profit_so_far
 
 # plan
-# find max_value of list and index (cannot be the 0 index)
-# find min_value of list up to max_value_index (cannot be index higher than max)
-# then subtract both numbers
 
 
 a = [100, 90, 80, 50, 20, 10]
@@ -21,16 +18,6 @@ b = [10, 7, 5, 8, 11, 9]
 c = [1050, 270, 1540, 3800, 2]
 d = [100, 55, 4, 98, 10, 18, 90, 95, 43, 11, 47, 67, 89, 42, 49, 79]
 e = [10000, 1000, 5900, 50, 5000, 10]
-
-
-# for i, v in enumerate(a):
-#     max_value = max(a[1:])
-#     print(max_value[i])
-
-# max_value = max(prices[1:])
-# max_value_index = max_value[a]
-# min_value = min(prices[:max_value_index])
-# result = max_value - min_value
 
 
 def find_max_profit(prices):
